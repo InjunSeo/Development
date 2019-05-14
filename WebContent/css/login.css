@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* Full-width input fields */
+.K_inputid, .K_inputpsw {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.K_buttonlogin {
+  background-color: #dbc393;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0 15px  0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.K_signupbtn {
+  background-color: #f8f9fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0 15px  0;
+  border: 1px solid #d9dde2;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.K_imgcontainer {
+  text-align: center;
+  margin: 45px 0 25px 0;
+  position: relative;
+}
+
+img.K_together_img {
+  width: 50%;
+}
+
+.K_container {
+  padding: 28px 28px 10px 28px;
+}
+
+.K_extracontainer {
+  	padding: 20px 28px 10px 28px;
+	background-color: #f3f5f7;
+}
+
+span.K_loginstring {
+	font-size:  15px;
+}
+
+span.K_signupstring {
+	font-size:  15px;
+	color: #28292b;
+}
+
+/* The Modal (background) */
+.K_modal {
+  position: relative; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Black w/ opacity */
+  padding-top: 60px;
+}
+

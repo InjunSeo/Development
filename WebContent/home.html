@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>렛츠 투게더</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <div class="p_header">
+    <div class="p_title">렛츠투게더</div>
+    <div class="p_oursHead" onclick="openNav()">created by 중앙 602호
+      1조</div>
+  </div>
+
+  <div id="p_mySidenav" class="p_sidenav">
+    <a href="javascript:void(0)" class="p_closebtn" onclick="closeNav()">&times;</a>
+    <a href="#" onclick="visibleIntro( 'Kang')">강성민</a>
+    <a href="#" onclick="visibleIntro( 'Park')">박성인</a>
+    <a href="#" onclick="visibleIntro( 'Seo')">서인준</a>
+    <a href="#" onclick="visibleIntro( 'Youn')">윤형석</a>
+    <a href="#" onclick="visibleIntro( 'Lee')">이성용</a>
+    <a href="#" onclick="visibleIntro( 'Jo')">조용철</a>
+    <a href="#" onclick="visibleIntro( 'Cha')">차연지</a>
+    <a href="#" onclick="visibleIntro( 'Hu')">허미희</a>
+  </div>
+  <div id="p_intro">
+    <div class="p_int">
+      <div id="p_intName">박성인</div>
+      <div id="p_intCont">초기화면 및 전체 구성</div>
+    </div>
+  </div>
+
+  <script>
+			function openNav() {
+				document.getElementById("p_mySidenav").style.display = "block";
+			}
+
+			function closeNav() {
+				document.getElementById("p_mySidenav").style.display = "none";
+				document.getElementById("p_intro").style.display = "none";
+			}
+			function visibleIntro(Nm) {
+				switch (Nm) {
+				case "Kang":
+					name = "강성민";
+					cont = "로그인/가입";
+					break;
+				case "Park":
+					name = "박성인";
+					cont = "초기화면 및 전체 구성";
+					break;
+				case "Seo":
+					name = "서인준";
+					cont = "MyPage, 인증";
+					break;
+				case "Youn":
+					name = "윤형석";
+					cont = "모집 투게더";
+					break;
+				case "Lee":
+					name = "이성용";
+					cont = "투게더 등록";
+					break;
+				case "Jo":
+					name = "조용철";
+					cont = "상세페이지와 댓글";
+					break;
+				case "Cha":
+					name = "차연지";
+					cont = "끝난 투게더";
+					break;
+				case "Hu":
+					name = "허미희";
+					cont = "진행 투게더";
+					break;
+				default:
+					name = "박성인";
+					cont = "초기화면 및 전체 구성";
+				}
+
+				document.getElementById("p_intName").innerHTML = name;
+				document.getElementById("p_intCont").innerHTML = cont;
+				document.getElementById("p_intro").style.display = "block";
+			}
+		</script>
+
+
+  <div class="p_navbar">
+    <a href="home.html">홈</a>
+    <a href="enroll.html">투게더 등록 </a>
+    <a href="recruitTogether.html">모집중 </a>
+    <a href="ing.html">진행중 </a>
+    <a href="finished.html">끝난투게더</a>
+    <a href="login.html" class="p_right">로그인/가입</a>
+    <a href="myPage.html" class="p_right">MyPage</a>
+  </div>
+
+
+  <div class="p_row">
+
+    <div class="p_main" id="here">
+      <!-- 각자 변경해야 하는 부분 시작 -->
+      <h2>하루 만보 걷기</h2>
+      <h5>총코인: 900만원, 잔액: 139만원, 참여자: 300명, 기간:
+        2018/12/18~2019/03/25</h5>
+      <div class="p_fakeimg">
+        <a href="info.html">등록한 이미지</a>
+      </div>
+      <p>팀장의 변..</p>
+      <p>하루 만보를 처음 시작할 때는 힘들었어요. 하루에 만보를 어떻게 걸어? 라고 생각하시는 분들이 많을 거
+        같아요. 그런데 말이죠. 만보 생각보다 오래 걸리지 않아요. 그리고 생각보다 운동이 많이 되요...</p>
+      <br>
+      <h2>수요일은 대청소의 날</h2>
+      <h5>총코인: 30만원, 잔액: 12만원, 참여자: 31명, 기간: 2018/12/01~2019/05/31</h5>
+      <div class="p_fakeimg">
+        <a href="info.html">등록한 이미지</a>
+      </div>
+      <p>우리 투게더는요..</p>
+      <p>매주 수요일은 청소의 날로 정해봐요. 꼭 대청소가 아니어도 사무실 책상치우기, 화장실 청소, 거실 유리창
+        닦기 등등 미뤄놓기 일쑤인 일들을 맘 먹고 해 보는 걸로 해봐요~</p>
+      <!-- 각자 변경해야 하는 부분 끝-->
+    </div>
+
+    <div class="p_side">
+      <h2>박성인</h2>
+      <div class="p_userimg">
+        <a href="myPage.html">
+          <img src="img/pic1.gif" alt="사진/등록한 이미지" class="p_pic1">
+        </a>
+      </div>
+      <p>나의 마일리지: 43,000원, 가입일: 2016/12/30, 총 참여 투게더: 18개</p>
+      <br>
+      <h3>나의 투게더</h3>
+      <p>현재 3개 진행중 (이미 종료한 투게더: 15개)</p>
+      <div class="p_mytimg">
+        <a href="info.html">[인증] 하루 물 1.5L</a>
+      </div>
+      <br>
+      <div class="p_mytimg">
+        <a href="info.html">[인증] 듀오링고 50링깃 얻기</a>
+      </div>
+      <br>
+      <div class="p_mytimg">
+        <a href="info.html">[인증] 일주일에 300g빼기</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="p_footer">
+    <h4>중앙 602호 1조: 강성민, 박성인, 서인준, 윤형석, 이성용, 조용철, 차연지, 허미희</h4>
+  </div>
+
+</body>
+</html>
