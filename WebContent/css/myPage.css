@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+.s_notify {
+	font-family: "맑은 고딕";
+}
+#s_tt {
+	margin: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.s_myTogetherList {
+	flex: none%;
+	flex-basis: 34px; 
+	margin: 10px;
+	position: relative;
+	font-family: "맑은 고딕";
+	display: inline-block;
+}
+
+.s_gallery {
+	margin: 0px 10px 10px 0px;
+	width: 290px;
+	padding: 10px;
+
+}
+
+.s_gallery:hover {
+  /* border: 1px solid #777; */
+  background-color: #90EE90;
+}
+
+div.s_gallery img {
+	padding: 5px;
+ 	width: 100%;
+ 	height: 170px;
+}
+
+.s_title {
+	font-weight: bold;
+	text-align: center;
+	word-break: keep-all;
+}
+
+.s_desc  {
+  padding: 5px;
+}
+
+.s_achievement {
+  padding: 5px;
+}
+
+.s_file {
+	
+}
+.s_certButton {
+		
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  padding: 14px 28px;
+  margin: 5px 3px 5px 3px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.s_certButton:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.s_hrLine {
+	margin-top: 30px;
+}
+
+#s_menu2{
+	padding: 3px;
+	font-family: "맑은 고딕";
+}
+
+.s_btn {
+	border :none;
+	color: white;
+	font-weight: bold;
+	background-color : pink;
+	cursor: pointer;
+	
+}
+
+.s_btn:hover {
+	background-color: #ddd;
+	color: black;
+	
+}
+
+#s_selected {
+	background-color: #ddd;
+	color: black;
+} 
+
+* {
+  box-sizing: border-box;
+}
+
+.s_certify {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+.s_filebox label {
+  border-bottom-color: #4CAF50;
+  cursor: pointer;
+}
+
+#s_certFile {
+	border: none;
+	
+}
+button.s_gallery {
+	padding: 14px;	
+	background-color: gray;
+}
+
+/* #s_certiButton {
+	padding: 14px;
+	border: none;
+	background-color: gray;
+	width: 100%;
+	
+} */
+
+
+
+#s_certiButton:hover {
+	background-color: white;
+}
+
+.s_filebox input {
+  position: absolute;
+}
+
+/* @media only screen and (max-width: 700px) {
+  .s_certify {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .s_certify {
+    width: 100%;
+  }
+} */
+
+.s_clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.s_block {
+  font-size: 16px;
+  border: none;
+  padding: 14px 28px;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.s_block:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#passedTo {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#passedTo td, #passedTo th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#passedTo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#passedTo tr:hover {
+  background-color: #ddd;
+}
+
+#passedTo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

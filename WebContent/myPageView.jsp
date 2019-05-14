@@ -19,14 +19,12 @@
 <%@ include file="togetherShellM.jsp"%>
 
 <!-- 각자 변경해야 하는 부분 시작 -->
-
-<!--로그인 상태 아닐 시 alert 띄우고 home.do로 보내기  -->
-<%-- <c:if test="${sessionScope.member = null}">
+<c:if test="${sessionCheck != '1'}">
 	<script type="text/javascript">
 		alert("로그인 상태가 아닙니다.");
 		location.href = "home.do";
 	</script>
-</c:if> --%>
+</c:if>
 
 <h2>인증하기</h2>
 	<c:choose>

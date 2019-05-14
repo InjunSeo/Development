@@ -1,0 +1,79 @@
+@charset "EUC-KR";
+
+.s_chargeContainer {
+	margin: 10px;
+}
+
+.s_chargeTable {
+	width: 290px;
+	margin: 5px;
+	padding: 10px;	
+	font-family: '¸¼Àº °íµñ';	
+	font-weight: normal;
+}
+.s_chargeTable:hover {
+	background-color: #969696;
+	color: white;
+	
+}
+
+#s_chargeImg {
+	padding: 5px;
+ 	width: 100%;
+}
+
+th {
+	padding: 5px;
+}
+
+.s_th1 {
+	text-align: center;	
+	border-bottom: 1px solid black;
+}
+
+.s_th2 {
+	text-align: left;
+	font-weight: normal;
+}
+
+td {
+	text-align: right;
+}
+
+.s_th3 input {
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  padding: 14px 28px;
+  margin: 5px 3px 5px 3px;
+  width: 100%;
+  background-color: #ff9800;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
