@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.J_mainBox {
+  position: relative;
+}
+
+.J_imgBox {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.J_imgBox img {
+  vertical-align: middle;
+}
+
+.J_imgwidth {
+  height: 500px;
+}
+
+.J_imgContent {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.J_textCenterAlign {
+  width: 100%;
+}
+
+.J_togetherInfoAlign {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: normal;
+  font-color: white;
+  border-bottom: 1px outset;
+}
+
+#J_textCenterAlign {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.j_creatorIDReply {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.j_replyReply {
+  font-size: 1em;
+  color: black;
+}
+
+.j_createDateReply {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.j_comment {
+  border: 1px inset;
+  border-radius: 0px;
+  height: 30px;
+  width: 300px;
+}
+
+a:hover {
+  cursor: pointer;
+}

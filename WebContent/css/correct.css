@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/* Full-width input fields */
+.K_inputid, .K_inputnewpw, .K_pwchk, .K_inputnewpwchk, .K_inputphone, .K_inputname {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.K_inputmailhead {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.K_point {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;	
+}
+
+.K_showpoint {
+  width: 60%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 900;
+  float: left;
+  align-content: center;
+}
+
+.K_linkpoint {
+	width: 37%;
+  float: right;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.K_mailmid {
+	align-items: center;
+}
+
+.K_inputmailtail {
+  width: 37%;
+  float: right;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.K_signupbtn {
+  background-color: #f8f9fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0 15px  0;
+  border: 1px solid #d9dde2;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+ .K_withdrawalbtn {
+  background-color: #f8f9fa;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0 15px  0;
+  border: 1px solid #d9dde2;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.K_signupbtn:hover, .K_withdrawalbtn:hover {
+  opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.K_imgcontainer {
+  text-align: center;
+  margin: 45px 0 25px 0;
+  position: relative;
+}
+
+img.K_together_img {
+  width: 50%;
+}
+
+.K_container {
+  padding: 28px 28px 10px 28px;
+}
+
+span.K_signupstring, span.K_withdrawalstring {
+	font-size:  15px;
+	color: #28292b;
+}
+
+/* The Modal (background) */
+.K_modal {
+  position: relative; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Black w/ opacity */
+  padding-top: 60px;
+}
+

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.y_bigGathTo {
+	height: 1300px;
+	width: 1300px;
+}
+.y_gathTo {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.y_gathImg img{
+	width: 200px;
+	height: 160px;
+}
+
+.y_gathTo:hover {
+  background-color: #D1B2FF;
+  color: white;
+}
+
+.y_gathButton {
+  background-color: #6386c7; 
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.y_gathButton:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+.y_gathButton2 {
+  background-color: #d14346; 
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.y_gathButton2:hover {
+  background-color: #edef85;
+  color: white;
+}
+
+.y_gathContents {
+  background-color: white;
+  width: 1050px;
+  height: 600px;
+  border: 5px solid green;
+  border-color: #bbd1ff;
+  padding: 5px 30px;
+  margin: 20px 2px;
+}
+
+.y_gathTitle {
+	text-align: center;
+}
+
+.y_pageNum {
+	left: 650px;
+	bottom: -550px;
+	position: absolute;
+}

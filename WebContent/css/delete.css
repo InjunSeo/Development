@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.K_container {
+   text-align: center;
+   margin: 50px 20%;
+   position: relative;
+   width: 60%;
+   align-content: center;
+   box-sizing: border-box;
+}
+
+img.K_together_img {
+  width: 100%;
+  margin: auto;
+}
+
+.K_delChkString {
+	font-size: x-large;
+}
+
+.K_delInputPw {
+	width: 70%;
+	padding: 12px;
+}
+
+.K_delInputSubmit {
+	width: 25%;
+	padding: 12px;
+}
+
+/* The Modal (background) */
+.K_modal {
+  position: relative; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white; /* Black w/ opacity */
+  padding-top: 60px;
+}
+

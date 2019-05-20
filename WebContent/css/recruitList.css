@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+.y_bigGathTo {
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+	position: relative;
+	}
+
+.y_gathTo {
+  height: 480px;
+  width: 400px;
+  float: left;
+  display: block;
+  color: black;
+  padding: 20px 30px;
+  cursor: pointer;
+  border: 2px solid #fcaf81;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+	}
+
+.y_gathImg img{
+	width: 250px;
+	height: 200px;
+	border: 3px solid #ffffff;
+}
+
+.y_gathinfo {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold; 
+}
+
+.y_gathTo:hover {
+  background-color: #fcaf81;
+  color: white;
+}
+
+.y_gathJoin {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#y_joinButton {
+  vertical-align: text-top;
+  margin: 2px 20px;
+  padding: 8px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #e07e81;
+  border: #fcaf81 solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0
+    rgba(0, 0, 0, 0.19);
+}
+
+#y_joinButton:hover {
+  background-color: #ffffff;
+  color: #e07e81;
+}
+
+#y_joinButton:active {
+  background-color: #edef85;
+  box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0
+    rgba(0, 0, 0, 0.19);
+  transform: translateY(1px);
+}
+
+/* #y_joinButton:disabled {
+  vertical-align: text-top;
+  margin: 2px 20px;
+  padding: 8px 35px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #c1c1c1;
+  border: #fcaf81 solid 2px;
+  border-radius: 10px;
+  box-shadow: 0 8px 100px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0
+    rgba(0, 0, 0, 0.19); */
+	
+}
+/* .y_gathButton {
+  background-color: #6386c7; 
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.y_gathButton:hover {
+  background-color: #7c7c7c;
+  color: white;
+}
+
+.y_gathButton2 {
+  background-color: #d14346; 
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.y_gathButton2:hover {
+  background-color: #edef85;
+  color: white;
+} */
+
+
+a {
+  text-decoration: none;	
+}
+
+#y_anchor {
+  text-decoration: none;		
+}
+
+.y_gathContents {
+  background-color: white;
+  width: 1050px;
+  height: 600px;
+  border: 5px solid green;
+  border-color: #bbd1ff;
+  padding: 5px 30px;
+  margin: 20px 2px;
+}
+*/
+
+.y_gathInfo:hover {
+  color: white;
+}
+
+.y_gathTitle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #5444df;
+	font-size: 30px;
+	font-weight: bold; 
+	text-align: center;
+	width        : 330px;     /* 너비는 변경될수 있습니다. */
+  	text-overflow: ellipsis;  /* 위에 설정한 100px 보다 길면 말줄임표처럼 표시합니다. */
+  	white-space  : nowrap;    /* 줄바꿈을 하지 않습니다. */
+  	overflow     : hidden;    /* 내용이 길면 감춤니다 */
+  	display      : block;
+}
+
+.y_pageBottom {
+	width: 100%;
+}
+
+.y_returnToList {
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: -40px;
+}
+
+#y_returnButton {
+	width: 80px;
+	height: 40px;
+}
+
+.y_search{
+	width: 100%;
+	text-align: right;
+	right: 175px;
+	bottom: 0px;
+	position: absolute;
+}
+
+#y_searching {
+	height: 30px;
+	text-align: center;
+	right: 100px;
+	bottom: -30px;
+	position: absolute;
+}
+
+#y_searchingButton {
+	height: 30px;
+	text-align: right;
+	right: 50px;
+	bottom: -30px;
+	position: absolute;
+}
+
+.y_pageNumber {
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	bottom: -15px;
+	position: absolute;
+}
+
+.y_sorting {
+	text-align: right;
+	margin-right: 180px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+	.y_bigGathTo {
+		flex-direction: column; }
+}
+
+

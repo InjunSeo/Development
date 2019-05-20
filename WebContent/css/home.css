@@ -1,34 +1,88 @@
 @charset "UTF-8";
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "초코쿠키",  "애플민트", "휴먼편지체", "휴먼옛체", "맑은 고딕";
+  font-family: "초코쿠키", "애플민트", "휴먼편지체", "휴먼옛체", "맑은 고딕", "Charm";
   margin: 0;
 }
 
 /* Style the p_header */
 .p_header {
-  padding: 40px 0px 20px 0px;
+  padding: 40px 0px 10px 0px;
   background: #0080C0;
   text-align: center;
   color: white;
 }
 
-.p_title{
-  padding: 0px 0px 20px 0px;
-  font-size: 70px;  
+.p_title {
+  padding: 0px 0px 0px 0px;
+  font-size: 65px;
 }
+
+.p_title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.p_searchContainer {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  width: 400px;
+  height: 100%;
+  vertical-align: baseline;
+  border: 2px solid;
+  padding: 5px 20px;
+}
+
+.p_searchContainer input[type=text] {
+  width: 75%;
+  height: 30px;
+  border: none;
+  margin: 0px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.p_searchContainer input[type=submit] {
+  margin: 0px 1px;
+  width: 20%;
+  height: 30px;
+  background: white;
+  color: #0080C0;
+  font-size: 1em;
+  font-weight: bold;
+  vertical-align: middle;
+  border: none;
+}
+
+.p_searchContainer .p_checkBoxs {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0px;
+  height: 20px;
+  margin: 0px 0px 0px 10px;
+  font-size: 1em;
+}
+
+.p_searchContainer label1 {
+  width: 250px;
+  height: 30px;
+}
+
 .p_oursHead {
   padding: 3px 30px 3px 30px;
-  font-size: 20px;
+  font-size: 16px;
+  color: silver;
   cursor: pointer;
 }
 
-.p_oursHead:hover{
-  background-color: white;
+.p_oursHead:hover {
+  background: white;
   color: #0080C0;
 }
 
@@ -45,6 +99,7 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 /* Right-aligned link */
 .p_navbar a.p_right {
@@ -78,6 +133,7 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .p_sidenav a:hover {
@@ -109,12 +165,12 @@ body {
   width: 200px;
   height: 300px;
   border: 2px dashed white;
-  border-radius: 5px; 
-  background : rgba( 0, 0, 0, 0.7);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: 20px;
   font-weight: bold;
-  background: rgba(0, 0, 0, 0.7);;
+  text-align: center;
 }
 
 #p_intName {
@@ -129,22 +185,26 @@ body {
   padding: 20px;
 }
 
-.p_mytimg a {
-  float: left;
-  display: block;
-  color: white;
-  text-decoration: none;
+#p_process {
+  cursor: pointer;
+  display: none;
+  padding: 20px 0px;
 }
 
-.p_mytimg a:hover {
-  background-color: #aaa;
-  color: black;
+#p_process:hover {
+  color: red;
 }
+
+#p_intro hr {
+  width: 85%;
+}
+
+
 
 /* Column container */
 .p_row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -153,6 +213,8 @@ body {
   flex: 23%;
   background-color: #EAF4FF;
   padding: 20px;
+  min-height: 800px;
+  min-width: 350px;
 }
 
 /* Main column */
@@ -162,54 +224,396 @@ body {
   padding: 20px;
 }
 
-.p_pic1 {
-  height: 160px;
-  width: 160px;
+/* 로긴 사용자 정보를 담는 곳 */
+#p_memberInfoContainer {
+  position: relative;
+  background-color: #aaa;
+  color: white;
+  width: 100%;
+  height: 115px;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+  text-align: center;
 }
 
-/* 로긴 사용자image */
-.p_userimg {
-  background-color: #aaa;
+#p_memberInfoBgImg {
   width: 100%;
-  padding: 20px;
-  height: 200px;
+  height: 100%;
 }
 
-.p_mytimg {
-  background-color: #aaa;
+#p_memberInfo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  padding: 20px;
-  height: 60px;
+  height: 100%;
+  padding: 10px 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.1em;
+}
+
+#p_memberName {
+  display: block;
+  background: white;
+  color: #333;
+  font-size: 1.3em;
+  padding: 5px 10px;
+  text-align: center;
+  background: white;
+}
+
+#p_memberName a {
+  text-decoration: none;
+  padding: 1px 10px;
+}
+
+#p_memberName a:hover {
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+#p_memberName button {
+  border: 1px solid #333;
+  background: white;
+  color: #333;
+  font-family: "맑은 고딕";
+  font-size: 13px;
+  padding: 2px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#p_memberName button:hover {
+  border: 1px solid #333;
+  background: #333;
+  color: white;
+  font-weight: bold;
+}
+
+.p_memberInfoDesc {
+  margin: 5px 35px;
+  text-align: left;
+}
+
+.p_myTogetherHead {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.p_noneList {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  background: rgba(255,0,0,0.5);
+  color: white;
+  padding: 1px;
+  margin: 10px 0px;
+}
+
+.p_myTogetherContainer {
+  background: #aaa;
+  width: 100%;
+  height: 50px;
+  padding: 0px;
+  margin: 7px 0px 15px 0px;
+  vertical-align: middle;
+  font-size: 1em;
+  line-height: 105%;
+  white-space: nowrap;
+}
+
+/*모집중인 투게더를 위해  */
+.p_myTogetherContainer1 {
+  background: Lavender;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+/*진행중인 투게더를 위해  */
+.p_myTogetherContainer2 {
+  background: MintCream;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+/*종료된 투게더를 위해  */
+.p_myTogetherContainer3 {
+  background: LightSteelBlue;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+}
+
+.p_myTogetherContainer a {
+  color: black;
+  text-decoration: none;
+}
+
+.p_myTogetherContainer:hover, .p_myTogetherContainer0:hover,
+  .p_myTogetherContainer1:hover, .p_myTogetherContainer2:hover,
+  .p_myTogetherContainer3:hover, .p_myTogetherContainer a:hover {
+  background-color: gray;
   color: white;
 }
 
-/* Fake image, just for this example */
-.p_fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  height: 200px;
-  padding: 20px;
+.p_myTogetherImg {
+  float: left;
+  width: 46px;
+  height: 46px;
+  margin: 0px 2px 0px 0px;
+  vertical-align: text-top;
+  text-overflow: clip;
 }
 
-.p_fakeimg a {
-  float: left;
+.p_viewTogetherAjax {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1px 5px;
+  margin: 7px 2px 0px 2px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.p_viewTogetherAjax:hover {
+  background: white;
+  color: black;
+}
+
+#p_togetherAjaxContainer {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 200px;
+  width: 300px;
+  height: 300px;
+  padding: 0px;
+  border: 2px dashed white;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 0.95em;
+  font-weight: bold;
+  border: 2px dashed white;
+}
+
+@media screen and (max-width: 700px) {
+  #p_togetherAjaxContainer {
+    left: 10px;
+  }
+}
+
+#p_togetherAjaxClose:hover {
+  color: white;
+}
+
+#p_togetherAjaxClose {
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  right: 6px;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-left: 50px;
+  color: #005680;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+#p_togetherAjax {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+#p_togetherAjaxThumPath {
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  border-radius: 20px;
+}
+
+#p_togetherAjaxContent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 90%;
+  height: 80%;
+  padding: 3%;
+  margin: 10% 5%;
+  background: rgba(255, 255, 255, 0.8);
+  color: DarkSlateGrey;
+  border-radius: 20px;
+}
+
+#p_togetherAjaxTitle {
+  font-size: 1.2em;
+  background: #005680;
+  color: white;
+  padding: 2px 10px;
+}
+
+#p_togetherAjaxMiddle {
+  overflow: auto;
+  width: 100%;
+  height: 80%;
+}
+
+#p_togetherAjaxFooter {
+  position: absolute;
+  bottom: 5px;
+  text-align: right;
+  background: #005680;
+  color: white;
+  width: 93%;
+  padding: 2px 15px;
+}
+
+#p_searchTitle {
+  font-size: 20px;
+  background: #0080C0;
+  color: white;
+  padding: 2px 10px;
+  margin: 0px 0px 20px 0px;
+}
+
+#p_homeBody {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p_togetherContainer {
+  flex: auto;
+  width: 40%;
+  margin: 0px 8px;
+}
+
+@media screen and (max-width: 1000px) {
+  .p_togetherContainer {
+    flex: auto;
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+.p_togetherTitle {
+  font-size: 1.4em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.p_joinButton {
+  vertical-align: text-top;
+  margin: 0px;
+  padding: 1px 5px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: Gainsboro;
+  border: DarkSlateGray solid 2px;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0
+    rgba(0, 0, 0, 0.19);
+}
+
+#p_cert {
+  color: #CD5C5C;
+  border: #CD5C5C solid 2px;
+}
+
+.p_joinButton:hover {
+  background-color: DarkSlateGray;
+  color: white;
+}
+
+.p_joinButton:active {
+  background-color: DarkSlateGray;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0
+    rgba(0, 0, 0, 0.19);
+  transform: translateY(1px);
+}
+
+.p_togetherContent {
+  position: relative;
+  background: #ddd;
+  /* width: 100%; */
+  height: 200px;
+  padding: 10px;
+  margin: 5px 0px 25px 0px;
   display: block;
+  color: white;
+}
+
+.p_togetherContent a {
+  float: left;
   color: white;
   text-decoration: none;
 }
 
-.p_fakeimg a:hover {
-  background-color: #aaa;
-  color: black;
+.p_togetherContent:hover, .p_TogetherImg:hover, .p_togetherBrief:hover,
+  .p_togetherDesc:hover {
+  background: gray;
+  color: white;
+}
+
+.p_TogetherImg {
+  width: 260px;
+  height: 180px;
+  padding: 0px;
+}
+
+.p_togetherBrief {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 5px;
+  font-size: 1em;
+}
+
+.p_togetherDesc {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 280px;
+  padding: 0px;
+  margin: 0px;
+  height: 90%;
+  overflow: auto;
+  font-size: 1.1em;
+  color: #222;
+}
+
+@media screen and (max-width: 1400px) {
+  .p_TogetherImg {
+    width: 60%;
+  }
+  .p_togetherDesc {
+    left: 62%;
+  }
 }
 
 /* p_footer */
 .p_footer {
-  padding: 5px;
-  text-align: right;
-  /* background: #ddd; */
+  font-size: 14px;
+  padding: 5px 20px;
+  /* text-align: right; */
   background: #005680;
+  width: 100%;
   color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -220,7 +624,7 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 200px) {
   .p_navbar a {
     float: none;
     width: 100%;

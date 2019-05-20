@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.l_table {
+	width : 90%;
+	margin: 0 auto;
+}
+
+.l_input {
+	padding : 10px;
+	background: #f1f1f1;
+	border: none;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#l_preViewBox {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin: 10px;
+	max-width: 200px;
+	max-height: 300px;
+	padding : 5px;
+	border: 1px solid gray;
+}
+#l_preView{
+	display: block;
+ 	width: 100%;
+  	height: auto;
+}
+.l_th {
+	width: 20%; 
+	background-color : #96d199;
+	color: white;
+	background-color: #96d199;
+}
+
+.l_content {
+	width: 100%;
+}
+
+#l_title, #l_thum{
+	width: 100%;
+}
+
+#l_startDate , #l_endDate {
+	width: 100%;
+}
+
+#l_minPerson , #l_maxPerson {
+	width: 60%;
+}
+
+#l_point{
+	width: 70%;
+}
+.l_button{
+	text-align: center;
+	
+}
+.l_th{
+	padding-bottom : 10px;
+	padding-top : 10px;	
+}
+.l_enrollbtn {
+	width: 90%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	margin: 0 auto;
+	border: none;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.l_table input[type=text]:focus, .l_container input[type=number]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+/* Overwrite default styles of hr */
+.l_line {
+	border: 1px solid #dadada;
+	margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.l_enrollbtn:hover {
+	opacity: 1;
+}
+
+.l_input.readOnly {
+	background: #a0a0a0;
+}

@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* 메인 창의 배경 */
+.K_contentBackground {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(255,255,255,0.6);
+}
+/* 메인 창 메인 전체설정 */
+.K_content {
+  background-color: #fefefe;
+  margin: auto;
+  max-width: 1100px;
+}
+/* 메인 창 메인 애니메이션 */
+.K_animate {
+	animation: animatezoom 0.4s;
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* 이미지 div */
+.K_imgContainer {
+	padding: 3%;
+	text-align: center;
+}
+/* 이미지 파일 */
+.K_togetherImg {
+	width: 40%;
+}
+/* 이름 비밀번호 비밀번호 div */
+.K_setInfo {
+	width: 50%;
+	margin: auto;
+	align-content: center;
+}
+/* 이름, 비밀번호, 비밀번호 확인, 이메일,  연락처, 열정포인트 칸*/
+.K_setInfoContent {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  color: #28292b;	
+}
+/* 탈퇴 안내 문구 */
+.K_setCloseText {
+	text-align: center;
+	font-size: 2em;
+}
+/* 탈퇴 실패 문구 */
+.K_closeFailedText {
+	display: block;
+  text-align: center;
+ 	color: red;
+}
+/* 버튼 활성화시 설정 */
+button:hover {
+  opacity: 0.8;
+}
+/* 입력칸 활성시 설정 */
+input:focus { 
+   outline: none !important;
+   border-color: #dbc393;
+   box-shadow: 0 0 5px #dbc393;
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* 메인 창의 배경 */
+.K_contentBackground {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(255,255,255,0.6);
+}
+/* 메인 창 메인 전체설정 */
+.K_content {
+  background-color: #fefefe;
+  margin: auto;
+  max-width: 1100px;
+}
+/* 메인 창 메인 애니메이션 */
+.K_animate {
+	animation: animatezoom 0.4s;
+}
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/* 이미지 div */
+.K_imgContainer {
+	padding: 3%;
+	text-align: center;
+}
+/* 이미지 파일 */
+.K_togetherImg {
+	width: 40%;
+}
+/* 이름 비밀번호 비밀번호 div */
+.K_setInfo {
+	width: 72%;
+	margin: auto;
+	align-content: center;
+}
+/* 이름, 비밀번호, 비밀번호 확인, 이메일,  연락처, 열정포인트 칸*/
+.K_setInfoContent {
+  width: 100%;
+  padding: 5px 20px;
+  margin: 5px 0 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 800;
+  color: #28292b;	
+}
+.K_point {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;	
+}
+/* 포인트 표시 */
+.K_showpoint {
+  width: 60%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: 900;
+  float: left;
+  align-content: center;
+}
+/* 포인트 충전버튼 */
+.K_chargePoint {
+	width: 37%;
+ 	padding: 7px 0;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+	font-weight: 800;
+  float: right;
+}
+/* 가입완료 버튼 */
+.K_signupBtn {
+  background-color: #dbc393;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0 15px  0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+  float: left;
+}
+/* 회원탈퇴 버튼 */
+ .K_withdrawalBtn {
+  background-color: #eaebed;
+  color: white;
+  padding: 14px 20px;
+  margin: 25px 0 15px  0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 48%;
+  float: right;
+}
+/* 버튼 마우스 오버시 */
+button:hover {
+  opacity: 0.8;
+}
+/* 버튼의 문구를 설정 */
+span.K_signupString, span.K_withdrawalString {
+	font-size:  15px;
+	color: #28292b;
+}
+/* 입력칸 활성시 설정 */
+input:focus { 
+   outline: none !important;
+   border-color: #dbc393;
+   box-shadow: 0 0 5px #dbc393;
+}
