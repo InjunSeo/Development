@@ -26,7 +26,7 @@ import dto.Together;
  * @author saintp
  *
  */
-public class HomeAction implements interfaceForAction
+public class HomeAction implements InterfaceForAction
 {
 
 	@Override

@@ -12,16 +12,17 @@ import dao.JunDao;
 import dto.Member;
 import dto.Together;
 
-public class MyPageAction implements interfaceForAction {
+public class MyPageAction implements InterfaceForAction {
 	public String requestPro(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		JunDao jun = JunDao.getInstance();
-		
+		int sessionCheck = 0;
 		try {
 			HttpSession session = request.getSession();
 			Member member = (Member) session.getAttribute("member");
 
-			if (member != null && !member.equals("")) { //로그인 상태 == T
+			if (member != null && !member.equals("")) {
+				sessionCheck = 1;  // 로그인 상태임
 				String id = member.getID();
 				System.out.println("[MyPageAcion.java] id: " + id);
 				
@@ -80,8 +81,11 @@ public class MyPageAction implements interfaceForAction {
 				
 				// 로그인 상태 아닐 경우, sessionCheck = 0
 			} else {
-				System.out.println("[MyPageAcion.java] ~로그인 상태  ");
+				sessionCheck = 0; 
 			}
+			
+			request.setAttribute("sessionCheck", sessionCheck);
+			System.out.println("[MyPageAcion.java]sessionCheck: " +sessionCheck);
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

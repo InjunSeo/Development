@@ -6,7 +6,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public interface InterfaceForAction {
+public class UpdateMemberFormAction implements InterfaceForAction {
+
+	@Override
 	public String requestPro(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException;
+			throws ServletException, IOException {
+
+		return "updateMemberFormView.jsp";
+	}
+
 }
